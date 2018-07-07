@@ -31,3 +31,11 @@
 .flip-clock-label {
     color: #ffffff !important;
 }
+
+#live_message {
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    top: 350px;
+    left: 35%;
+}

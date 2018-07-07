@@ -18,25 +18,15 @@
                 <h1 class="description">Dealer finance is preparing for the launch!</h1>
                 <div id="launch-countdown"></div>
             </div>
-            <video autoplay loop id="video-background" muted plays-inline>
-                <source src="content/prelaunch.mp4" type="video/mp4">
-            </video>
-
+            <h1 id="live_message" style="display: none">Dealer finance is live!</h1>
+            <video autoplay loop id="video" muted plays-inline datatype="video/mp4" src="content/prelaunch.mp4" ></video>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script src="content/flipclock.min.js"></script>
-        <script>
-            var dateNow = new Date();
-            var dateLaunch = new Date(2018, 7, 1, 9, 0, 0, 0);
-            var clock = $('#launch-countdown').FlipClock((dateLaunch - dateNow) / 1000, {
-                clockFace: 'DailyCounter',
-                countdown: true
-            });
-        </script>
-
+        <script src="countdown.js"></script>
     </body>
 </html>

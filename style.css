@@ -1,0 +1,33 @@
+.video-container {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container video {
+  min-width: 100%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.description {
+    color: #ffffff;
+    max-width:55%;
+}
+.counter-content {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+#launch-countdown {
+    margin-top: 25px;
+}
+.flip-clock-label {
+    color: #ffffff !important;
+}

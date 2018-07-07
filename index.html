@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content/flipclock.css">
+
+    <title>Dealer finance launch!</title>
+</head>
+    <body style="background-color: black;background: url(content/binding_dark.png) repeat;">
+        <div class="video-container">
+            <div class="counter-content">
+                <h1 class="description">Dealer finance is preparing for the launch!</h1>
+                <div id="launch-countdown"></div>
+            </div>
+            <video autoplay loop id="video-background" muted plays-inline>
+                <source src="content/prelaunch.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="content/flipclock.min.js"></script>
+        <script>
+            var dateNow = new Date();
+            var dateLaunch = new Date(2018, 07, 1, 9, 00, 00, 00);
+            var clock = $('#launch-countdown').FlipClock((dateLaunch - dateNow) / 1000, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+        </script>
+
+    </body>
+</html>
